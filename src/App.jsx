@@ -1,31 +1,35 @@
-import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
-import { lazy } from 'react'
-const Header = lazy(()=>import("./components/header/Header"));
-const Footer = lazy(()=>import("./components/footer/Footer"));
-const Home = lazy(()=>import("./pages/home/Home"));
-const About = lazy(()=>import("./pages/about/About"));
-const Shop = lazy(()=>import("./pages/shop/Shop"));
-const Contact = lazy(()=>import("./pages/contact/Contact"));
-
-
-import './App.css'
+import React from "react";
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  RouterProvider,
+  Route,
+} from "react-router-dom";
+import Layout from "./components/Layout/Layout";
+import Home from "./pages/Home";
+import Shop from "./pages/Shop";
+import ErrorPage from "./pages/ErrorPage";
+import Cart from "./pages/Cart";
+import ProductDetails from "./pages/ProductDetails";
+import Checkout from "./pages/Checkout";
+import Contact from "./pages/Contact";
 
 const App = () => {
-  return (
-    <div>
-      <Router>
-        <Header />
-        <Routes>
-          <Route path='/' element={Home} />
-          <Route path='/shop' element={Shop} />
-          <Route path='/about' element={About} />
-          <Route path='/contact' element={Contact} />
-        </Routes>
-        <Footer />
-      </Router>
-      
-    </div>
-  )
-}
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path="/shop" element={<Shop />} />
+        <Route path="/shop/:id" element={<ProductDetails />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/checkout" element={<Checkout />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<ErrorPage />} />
+      </Route>
+    )
+  );
 
-export default App
+  return <RouterProvider router={router} />;
+};
+
+export default App;
