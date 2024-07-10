@@ -1,0 +1,67 @@
+{
+  "hash": "257af0c4",
+  "configHash": "d42535fb",
+  "lockfileHash": "e3b0c442",
+  "browserHash": "f77c38ba",
+  "optimized": {
+    "@paypal/react-paypal-js": {
+      "src": "../../node_modules/@paypal/react-paypal-js/dist/esm/react-paypal-js.js",
+      "file": "@paypal_react-paypal-js.js",
+      "fileHash": "6a360394",
+      "needsInterop": false
+    },
+    "axios": {
+      "src": "../../node_modules/axios/index.js",
+      "file": "axios.js",
+      "fileHash": "efb0c528",
+      "needsInterop": false
+    },
+    "jwt-decode": {
+      "src": "../../node_modules/jwt-decode/build/esm/index.js",
+      "file": "jwt-decode.js",
+      "fileHash": "bd9bdfec",
+      "needsInterop": false
+    },
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "d7276453",
+      "needsInterop": true
+    },
+    "react-device-detect": {
+      "src": "../../node_modules/react-device-detect/dist/lib.js",
+      "file": "react-device-detect.js",
+      "fileHash": "3dd0fbc3",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "470b993f",
+      "needsInterop": true
+    },
+    "react-router-dom": {
+      "src": "../../node_modules/react-router-dom/dist/index.js",
+      "file": "react-router-dom.js",
+      "fileHash": "33325b9b",
+      "needsInterop": false
+    },
+    "react-toastify": {
+      "src": "../../node_modules/react-toastify/dist/react-toastify.esm.mjs",
+      "file": "react-toastify.js",
+      "fileHash": "04d94ddc",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-KB4VQC4Z": {
+      "file": "chunk-KB4VQC4Z.js"
+    },
+    "chunk-PMYDY72F": {
+      "file": "chunk-PMYDY72F.js"
+    },
+    "chunk-ZS7NZCD4": {
+      "file": "chunk-ZS7NZCD4.js"
+    }
+  }
+}

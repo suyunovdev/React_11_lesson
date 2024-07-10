@@ -5,20 +5,8 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {
-      fontFamily: {
-        'primary': ['Poppins', 'sans-serif']
-      },
-      colors: {
-        'primary': '#333333',
-        'secondary': '#666666',
-        'third': '#F9F1E7',
-        'brand': '#B88E2F',
-      }
-    },
-    container: {
-      center: true
-    }
+    extend: {},
   },
   plugins: [],
 }
+
